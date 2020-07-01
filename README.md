@@ -4,6 +4,6 @@
 ```
 
 Paleta SASS 
-![Test Image 7](https://github.com/tograh/testrepository/master/3DTest.png 41)
+![](https://github.com/dhren2019/ejercicios-layout/blob/master/paleta-colores/paleta.JPG)
 
 ````
