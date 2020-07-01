@@ -1,6 +1,6 @@
 # ejercicios-layout
 
-###Paleta colores
+### Paleta colores
 ```
 
 Paleta SASS 
