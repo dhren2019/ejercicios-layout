@@ -4,6 +4,6 @@
 ```
 
 Paleta SASS 
-![alt text](paleta.JPG)
+![paleta](https://github.com/dhren2019/ejercicios-layout/blob/master/paleta-colores/paleta.JPG)
 
 ````
