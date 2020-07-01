@@ -4,6 +4,6 @@
 ```
 
 Paleta SASS 
-![](https://github.com/dhren2019/ejercicios-layout/blob/master/paleta-colores/paleta.JPG)
+https://github.com/dhren2019/ejercicios-layout/blob/master/paleta-colores/paleta.JPG
 
 ````
