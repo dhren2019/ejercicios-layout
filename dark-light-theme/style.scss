@@ -1,0 +1,96 @@
+
+
+// GLOBAL
+:root {
+    font-size: 16px;
+    background-color: #ffffff;
+   
+  }
+  body {
+    background: hsl(210, 12%, 93%);
+    padding: 40px;
+    border-radius:10px;
+    padding: 4em;
+    margin: 8em;
+  }
+  #displai{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }  
+  .elemento {
+      
+       box-sizing: border-box;
+      background: white;
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      padding: 20px;
+    //   border: 1px solid hsl(210, 12%, 80%);
+    }
+    
+  // MIXINS
+  @mixin shadow($dirSw) {
+    box-shadow: $dirSw 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  @mixin font($fFamily, $fWeight) {
+    font-family: $fFamily;
+    font-weight: $fWeight;
+  }
+  @mixin radius($bRadius) {
+    border-radius: $bRadius;
+  }
+  
+  // TEMA A
+  $color: hsl(6, 78%, 57%);
+  $colorPorcentaje: 20%;
+  $dirSw: 10px;
+  $fFamily: Roboto;
+  $bRadius: 0;
+  
+  .elemento {
+    @include font($fFamily, 400);
+  }
+  .base {
+    background: $color;
+  }
+  .important {
+    background: darken($color, $colorPorcentaje);
+  }
+  .warning {
+    background: lighten($color, $colorPorcentaje);
+  }
+  .tipo{
+    background: #EBEDEF;
+    border: 1px solid black;
+   }
+  .shadow {
+    @include shadow($dirSw);
+    @include font($fFamily, 700);
+    @include radius($bRadius);
+  }
+  
+  // TEMA B
+  $color: hsl(204, 70%, 53%);
+  $colorPorcentaje: 20%;
+  $dirSw: -10px;
+  $fFamily: Roboto Slab;
+  $bRadius: 20px;
+  
+  .elemento {
+    @include font($fFamily, 400);
+  }
+  .base {
+    background: $color;
+  }
+  .important {
+    background: darken($color, $colorPorcentaje);
+  }
+  .warning {
+    background: lighten($color, $colorPorcentaje);
+  }
+  .shadow {
+    @include shadow($dirSw);
+    @include font($fFamily, 700);
+    @include radius($bRadius);
+  }
