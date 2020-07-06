@@ -5,21 +5,28 @@
     <title name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark/>Light theme</title>
     <link rel="stylesheet" href="style.scss">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+   
+      $('#opt-in').on('change',()=>{
+    $('body').toggleClass('fancy');
+  })
+</script>
+  
 </head>
 <body>
-    <div>
-    <h1>Cambiar de tema</h1>
-        <input type="checkbox" name="my-checkbox" id="opt-in">
-        <label for="opt-in">Check me!</label>
-      </div>
-      <br>
-    <div id="displai">
-        <div class="elemento box base">Base</div>
-        <div class="elemento box important">Important</div>
-        <div class="elemento box warning">Warning</div>
-      <div class="elemento box tipo"><span>Tipografia 1</span><br><br><span>Tipografia 2</span></div>
-        <div class="elemento box shadow">Box with shadow</div>
-    </div>
-    
+  <div>
+  <h1>Cambiar de tema</h1>
+      <input type="checkbox"  name="my-checkbox" id="opt-in"  >
+      <label for="opt-in">Check me!</label>
+   
+    <br>
+  <div id="displai">
+      <div class="elemento box base">Base</div>
+      <div class="elemento box important">Important</div>
+      <div class="elemento box warning">Warning</div>
+    <div class="elemento box tipo"><span class="tipo1">Tipografia 1</span><br><br><span class="tipo2">Tipografia 2</span></div>
+      <div class="elemento box shadow">Box with shadow</div>
+  </div>
+</div> 
 </body>
-</div>
+</html>

@@ -1,35 +1,78 @@
+// @import 'dark-theme.scss';
+// @import 'light-theme.scss';
 
 
-// GLOBAL
+:root {
+  --base-color: darkblue;
+  --main-color: blue;
+  --warn-color: lightblue;
+}
+
+.fancy {
+  --base-color: darkred;
+  --main-color: red;
+  --warn-color: coral;
+  
+}
+.base {
+  background: var(--base-color) !important;
+}
+
+.important {
+  background: var(--main-color) !important;
+}
+
+ .warning {
+   background: var(--warn-color) !important;
+ }
+
+
+
+$ffamilyglobal: 'Space Mono', monospace;
+// Global
 :root {
     font-size: 16px;
     background-color: #ffffff;
-   
+
+   h1 , div {
+    font: {
+        family: $ffamilyglobal;
+    }
+   }
   }
+
   body {
     background: hsl(210, 12%, 93%);
-    padding: 40px;
+    border-radius:10px;
+       padding: 40px;
     border-radius:10px;
     padding: 4em;
     margin: 8em;
   }
+
   #displai{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
   }  
+
+
   .elemento {
       
-       box-sizing: border-box;
-      background: white;
-      width: 150px;
-      height: 150px;
-      margin: 10px;
-      padding: 20px;
-    //   border: 1px solid hsl(210, 12%, 80%);
+    box-sizing: border-box;
+    background: white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 0.5em;
+
+   
     }
     
   // MIXINS
+
+  
   @mixin shadow($dirSw) {
     box-shadow: $dirSw 10px 10px 0 rgba(0, 0, 0, 0.3);
   }
@@ -37,60 +80,60 @@
     font-family: $fFamily;
     font-weight: $fWeight;
   }
-  @mixin radius($bRadius) {
-    border-radius: $bRadius;
-  }
   
-  // TEMA A
-  $color: hsl(6, 78%, 57%);
-  $colorPorcentaje: 20%;
-  $dirSw: 10px;
-  $fFamily: Roboto;
-  $bRadius: 0;
+ 
   
-  .elemento {
-    @include font($fFamily, 400);
-  }
-  .base {
-    background: $color;
-  }
-  .important {
-    background: darken($color, $colorPorcentaje);
-  }
-  .warning {
-    background: lighten($color, $colorPorcentaje);
-  }
-  .tipo{
-    background: #EBEDEF;
-    border: 1px solid black;
-   }
-  .shadow {
-    @include shadow($dirSw);
-    @include font($fFamily, 700);
-    @include radius($bRadius);
-  }
+//  @if  checkbox == 'true' {
+
+    input[type="checkbox"]:checked { 
+ $color: skyblue;
+ $colorPorcentaje: 20%;
+ $dirSw: -10px;
+ $fFamily: Roboto Slab;
+ $bRadius:20px;
+ 
+ .elemento {
+   @include font($fFamily, 400);
+ }
+ .base {
+   background: $color;
+ }
+ // .important {
+ //   background: darken($color, $colorPorcentaje);
+ // }
+ .warning {
+   background: lighten($color, $colorPorcentaje);
+ }
+ .shadow {
+   @include shadow($dirSw);
+   @include font($fFamily, 700);
+ }
+}
+// } @else checkbox == 'false' {
+     
   
-  // TEMA B
-  $color: hsl(204, 70%, 53%);
-  $colorPorcentaje: 20%;
-  $dirSw: -10px;
-  $fFamily: Roboto Slab;
-  $bRadius: 20px;
-  
-  .elemento {
-    @include font($fFamily, 400);
-  }
-  .base {
-    background: $color;
-  }
-  .important {
-    background: darken($color, $colorPorcentaje);
-  }
-  .warning {
-    background: lighten($color, $colorPorcentaje);
-  }
-  .shadow {
-    @include shadow($dirSw);
-    @include font($fFamily, 700);
-    @include radius($bRadius);
-  }
+
+    $color2:red;
+    $colorPorcentaje: 20%;
+    $dirSw: -10px;
+    $fFamily: Roboto Slab;
+    
+    .elemento {
+      @include font($fFamily, 400);
+    }
+    .base {
+      background: $color2;
+    }
+    .important {
+      background: darken($color2, $colorPorcentaje);
+    }
+    .warning {
+      background: lighten($color2, $colorPorcentaje);
+    }
+    .shadow {
+      @include shadow($dirSw);
+      @include font($fFamily, 700);
+    }
+    
+    
+//  }

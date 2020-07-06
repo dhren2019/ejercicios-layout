@@ -1,0 +1,11 @@
+  // MIXINS
+  @mixin shadow($dirSw) {
+    box-shadow: $dirSw 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  @mixin font($fFamily, $fWeight) {
+    font-family: $fFamily;
+    font-weight: $fWeight;
+  }
+  @mixin radius($bRadius) {
+    border-radius: $bRadius;
+  }
