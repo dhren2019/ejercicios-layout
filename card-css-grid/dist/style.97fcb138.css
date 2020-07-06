@@ -14,10 +14,6 @@
 }
 
 @media screen and (min-width: 500px) {
-  .band {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .item-1 {
     grid-column: 1/span 2;
   }
@@ -26,12 +22,6 @@
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 850px) {
-  .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-/* card */
 .card {
   min-height: 100%;
   background: white;
@@ -59,20 +49,13 @@
   flex-direction: column;
 }
 
-.card .thumb {
+.card .foto {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
   border-radius: 8px;
 }
 
-.card p {
-  flex: 1;
-  /* make p grow to fill available space*/
-  line-height: 1.4;
-}
-
-/* typography */
 h1 {
   font-size: 20px;
   margin: 0;
@@ -83,8 +66,14 @@ h1 {
   font-size: 12px;
   font-weight: bold;
   color: #999;
-  letter-spacing: 0.05em;
   margin: 2em 0 0 0;
+}
+
+.fecha {
+  text-align: right;
+  margin: 15px;
+  padding-right: 35px;
+  padding-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
