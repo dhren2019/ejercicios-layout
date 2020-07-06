@@ -5,12 +5,8 @@
     <title name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark/>Light theme</title>
     <link rel="stylesheet" href="style.scss">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-   
-      $('#opt-in').on('change',()=>{
-    $('body').toggleClass('fancy');
-  })
-</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  
   
 </head>
 <body>
@@ -28,5 +24,10 @@
       <div class="elemento box shadow">Box with shadow</div>
   </div>
 </div> 
+<script >
+$('#opt-in').on('change',()=>{
+  $('body').toggleClass('fancy');
+})
+</script>
 </body>
 </html>

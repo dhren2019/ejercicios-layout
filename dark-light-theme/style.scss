@@ -6,16 +6,21 @@
   --base-color: darkblue;
   --main-color: blue;
   --warn-color: lightblue;
+  border-radius: 8px;
 }
 
 .fancy {
   --base-color: darkred;
   --main-color: red;
   --warn-color: coral;
+  .elemento{
+    border-radius: 1.6rem;
+  }
   
 }
 .base {
   background: var(--base-color) !important;
+  
 }
 
 .important {
@@ -43,7 +48,7 @@ $ffamilyglobal: 'Space Mono', monospace;
 
   body {
     background: hsl(210, 12%, 93%);
-    border-radius:10px;
+    // border-radius:10px;
        padding: 40px;
     border-radius:10px;
     padding: 4em;
@@ -65,7 +70,8 @@ $ffamilyglobal: 'Space Mono', monospace;
     height: 150px;
     margin: 10px;
     padding: 20px;
-    border-radius: 0.5em;
+    border-radius: 1em;
+    // border-radius: 25px;
 
    
     }
