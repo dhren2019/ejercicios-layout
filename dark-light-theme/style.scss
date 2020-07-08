@@ -6,7 +6,21 @@
   --base-color: darkblue;
   --main-color: blue;
   --warn-color: lightblue;
-  border-radius: 8px;
+  
+  border-radius: 8px;ç
+  .tipo1{
+    font-family: Roboto ;
+  }
+  .tipo2{
+    font-family: Montserrat ;
+  }
+  $dirSw: -10px;
+  @mixin shadow($dirSw) {
+    box-shadow: $dirSw 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  .shadow {
+  @include shadow($dirSw);
+  }
 }
 
 .fancy {
@@ -16,11 +30,21 @@
   .elemento{
     border-radius: 1.6rem;
   }
+  .tipo1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+  .tipo2{
+    font-family: Roboto Slab ;
+  }
+  $dirSw:25px;
+  .shadow {
+    box-shadow: $dirSw 25px 25px 0 rgba(0, 0, 0, 0.3);
+  }
   
 }
+
 .base {
   background: var(--base-color) !important;
-  
 }
 
 .important {
@@ -30,6 +54,7 @@
  .warning {
    background: var(--warn-color) !important;
  }
+
 
 
 
@@ -75,71 +100,74 @@ $ffamilyglobal: 'Space Mono', monospace;
 
    
     }
+
+
+
+
+
     
   // MIXINS
 
   
-  @mixin shadow($dirSw) {
-    box-shadow: $dirSw 10px 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  @mixin font($fFamily, $fWeight) {
-    font-family: $fFamily;
-    font-weight: $fWeight;
-  }
+
+  // @mixin font($fFamily, $fWeight) {
+  //   font-family: $fFamily;
+  //   font-weight: $fWeight;
+  // }
   
  
   
 //  @if  checkbox == 'true' {
 
-    input[type="checkbox"]:checked { 
- $color: skyblue;
- $colorPorcentaje: 20%;
- $dirSw: -10px;
- $fFamily: Roboto Slab;
- $bRadius:20px;
+    // input[type="checkbox"]:checked { 
+//  $color: skyblue;
+// //  $colorPorcentaje: 20%;
+//  $dirSw: -10px;
+//  $fFamily: Roboto Slab;
+// //  $bRadius:20px;
  
- .elemento {
-   @include font($fFamily, 400);
- }
- .base {
-   background: $color;
- }
- // .important {
- //   background: darken($color, $colorPorcentaje);
- // }
- .warning {
-   background: lighten($color, $colorPorcentaje);
- }
- .shadow {
-   @include shadow($dirSw);
-   @include font($fFamily, 700);
- }
-}
-// } @else checkbox == 'false' {
+// //  .elemento {
+// //    @include font($fFamily, 400);
+// //  }
+// //  .base {
+// //    background: $color;
+// //  }
+// //  // .important {
+// //  //   background: darken($color, $colorPorcentaje);
+// //  // }
+// //  .warning {
+// //    background: lighten($color, $colorPorcentaje);
+// //  }
+//  .shadow {
+  
+//    @include font($fFamily, 700);
+//  }
+// // }
+// // } @else checkbox == 'false' {
      
   
 
-    $color2:red;
-    $colorPorcentaje: 20%;
-    $dirSw: -10px;
-    $fFamily: Roboto Slab;
+//     $color2:red;
+//     $colorPorcentaje: 20%;
+//     $dirSw: -10px;
+//     $fFamily: Roboto Slab;
     
-    .elemento {
-      @include font($fFamily, 400);
-    }
-    .base {
-      background: $color2;
-    }
-    .important {
-      background: darken($color2, $colorPorcentaje);
-    }
-    .warning {
-      background: lighten($color2, $colorPorcentaje);
-    }
-    .shadow {
-      @include shadow($dirSw);
-      @include font($fFamily, 700);
-    }
+//     .elemento {
+//       @include font($fFamily, 400);
+//     }
+//     .base {
+//       background: $color2;
+//     }
+//     .important {
+//       background: darken($color2, $colorPorcentaje);
+//     }
+//     .warning {
+//       background: lighten($color2, $colorPorcentaje);
+//     }
+//     .shadow {
+//       @include shadow($dirSw);
+//       @include font($fFamily, 700);
+//     }
     
     
-//  }
+// //  }
